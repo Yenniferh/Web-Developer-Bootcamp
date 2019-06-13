@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Formulario</title>
+  <style>
+    form{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 12px;
+      width: 430px;
+      height: auto;
+      justify-items: center;
+      align-items: center;
+      justify-content: flex-start;
+      background-color: #3b5998;
+      padding: 5px 10px;
+      color: white;
+      display: grid;
+      grid-template-columns: repeat(2,180px) 70px;
+      grid-template-rows: 20px 35px 20px; 
+    }
+
+    form input{
+      width: 160px;
+      margin: 3px 5px;
+    }
+
+    .email{
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+
+    .pass{
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+    }
+
+    .input-email{
+      grid-column: 1/2;
+    }
+
+    .input-pass{
+      grid-column: 2/3;
+      grid-row: 2/3;
+    }
+
+    .forget{
+      grid-row: 3 / end;
+      grid-column: 2 / end;
+      color: #9cb4d8;
+      justify-self: self-start;
+      align-self: start;
+    }
+
+    form label{
+      justify-self: self-start;
+      align-self: end;
+      margin: 0 7px;
+    }
+
+    form button{
+      border: 1px solid rgb(41, 72, 125);
+      border-radius: 2px solid;
+      color: white;
+      font-weight: bold;
+      background-color: #4267b2;
+    }
+
+    form button:hover{
+      background-color: #365899;
+    }
+
+    form button:active{
+      background-color: #29487d;
+    }
+  </style>
+</head>
+<body>
+  <form action="" method="post">
+    <label class="email">Correo electrónico</label>
+    <input class="input-email" type="email" name="a" id="" required>
+    <label class="pass">Contraseña</label>
+    <input class="input-pass" type="password" name="a" id="" required>
+    <a class="forget" href="">¿Has olvidado los datos de la cuenta?</a>
+    <button type="submit">Entrar</button>
+  </form>
+</body>
+</html>
