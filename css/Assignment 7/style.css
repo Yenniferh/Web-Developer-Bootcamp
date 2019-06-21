@@ -1,6 +1,4 @@
 * {
-  /* margin: 0;
-  padding: 0; */
   font-family: 'Raleway', sans-serif;
 }
 
@@ -21,6 +19,9 @@ p{
   text-transform: uppercase;
   font-weight: 800;
   font-size: 23px;
+  width: 30%;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #f1f1f1;
 }
 
 @media screen and (max-width: 767px) {
