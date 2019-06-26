@@ -1,0 +1,66 @@
+*{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+  width: 60%;
+  margin: 20px auto;
+  border: 20px solid #bdc3c7;
+}
+
+.date {
+  color: #3498db;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+article {
+  margin: 20px;
+}
+
+.article-heading {
+  color: #2c3e50;
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+
+.quote{
+  border-left: 5px solid #bdc3c7;
+  padding-left: 5px;
+}
+
+hr{
+  margin: 0 20px;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 767px) {
+  .container {
+    width: 80%;
+    border: 10px solid #bdc3c7;
+  }
+
+  article {
+    margin: 10px;
+  }
+
+  .highlight{
+    border-left: 3px solid #bdc3c7;
+    padding-left: 3px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .container {
+    width: 90%;
+    border: 7px solid #bdc3c7;
+  }
+
+  article {
+    margin: 7px;
+  }
+
+}
