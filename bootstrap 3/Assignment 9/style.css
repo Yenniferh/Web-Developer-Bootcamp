@@ -1,0 +1,45 @@
+:root{
+  --dark-blue: #2c3e50;
+  --light-gray: #ecf0f1;
+  --white-color: #fff;
+}
+
+body{
+  color: var(--dark-blue);
+  padding-top: 70px;
+}
+
+.navbar-brand {
+  text-transform: uppercase;
+}
+
+.nav li {
+  text-transform: capitalize;
+}
+
+.navbar-inverse{
+  background-color: var(--dark-blue); 
+}
+
+.navbar-inverse .navbar-nav>li>a, 
+.navbar-inverse .navbar-brand {
+  color: var(--white-color);
+}
+
+.navbar {
+  border: none;
+  border-radius: 0;
+}
+
+navbar-default .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+  background-color: var(--white-color);
+}
+
+.jumbotron {
+  background-color: var(--light-gray);
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, 
+.navbar-inverse .navbar-nav>li>a:hover{
+  color: var(--light-gray);
+}
